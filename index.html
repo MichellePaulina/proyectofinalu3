@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de compra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="proyectou3.css"> 
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="py-4">
+  <div class="container card-text">
+    <div class="row">
+      <div class="col-md-6"> 
+        <h1><img src="img/oclok logo.svg" class="d-block w-50" alt="logo"></h1>
+        <p>¡Second Hand Daily Outfits!</p>
+      </div>
+      <div class="col-md-6 d-flex justify-content-end align-items-center">
+        <!-- Botones adicionales -->
+        <button class="btn btn-primary mr-3"><i class="fas fa-shopping-cart mr-1"></i>Carrito</button>
+        <button class="btn btn-primary mr-3"><i class="fas fa-user mr-1"></i>Mi Cuenta</button>
+        <!-- Menú desplegable con categorías -->
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categorías
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#zapatos">Zapatos</a>
+            <a class="dropdown-item" href="#lonuevo">Lo Nuevo</a>
+            <a class="dropdown-item" href="#caballero">Caballero</a>
+            <a class="dropdown-item" href="#dama">Dama</a>
+            <!-- Puedes agregar más categorías aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Navigacion -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#registro">Registrate</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Sección de Bienvenida -->
+    <section id="bienvenida" class="py-5 text-center">
+      <div class="container">
+        <h2>Bienvenidos a tu thrift Store por Excelencia</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/img 1.png" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/IMG2.png" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/img 3.png" class="d-block w-100" alt="Imagen 3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+   <!-- Productos -->
+   
+<!-- Productos -->
+<section id="productos" class="py-5">
+  <div class="container">
+    <h2>Nuestros Outfits</h2>
+    <div class="row">
+      <!-- Primer producto -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/P1.jpeg" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Outfit Verónica</h5>
+            <p class="card-text">Precio: $549</p>
+            <p class="card-text">Talla: S</p>
+            <p class="card-text">Descripción: ¿Conoces la tendencia por mezclar prendas casuales y formales? Se ve tan fresca y moderna.</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">Comprar</a>
+            <button class="btn btn-outline-danger mt-2">Like</button> <!-- Botón de like -->
+          </div>
+        </div>
+      </div>
+      <!-- Segundo producto -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/P2.jpeg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Outfit Rebeca</h5>
+            <p class="card-text">Precio: $599</p>
+            <p class="card-text">Talla: S</p>
+            <p class="card-text">Descripción: Nos encantan los tonos pastel para esta primavera. Te traemos este combo de falda plana con esta increible camisa Daysi.</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">Comprar</a>
+            <button class="btn btn-outline-danger mt-2">Like</button> <!-- Botón de like -->
+          </div>
+        </div>
+      </div>
+      <!-- Tercer producto -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/P3.jpeg" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Outfit Miranda</h5>
+            <p class="card-text">Precio: $349</p>
+            <p class="card-text">Talla: M</p>
+            <p class="card-text">Descripción: Vamos a por lo Clásico con esta linda chamarra negra de cuero, esta mezcla neutra tiene tanto estilo como tú.</p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">Comprar</a>
+            <button class="btn btn-outline-danger mt-2">Like</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Llamada a la Acción 1 -->
+    <section id="llamada-accion1" class="py-5 text-center">
+      <div class="container">
+        <h2>¡Descuentos Increíbles!</h2>
+        <p>No te pierdas nuestras ofertas limitadas</p>
+        <a href="#" class="btn btn-lg btn-primary">Ver Ofertas</a> 
+      </div>
+    </section>
+
+    <!-- Llamada a la Acción 2 -->
+    <section id="llamada-accion2" class="py-5 text-center">
+      <div class="container">
+        <h2>¡Suscríbete a nuestro Newsletter!</h2>
+        <p>Recibe las últimas novedades y promociones directamente en tu correo</p>
+        <a href="#" class="btn btn-lg btn-primary">Suscribirse</a>
+      </div>
+    </section>
+
+    <!-- Registro de Nuevo Usuario -->
+    <section id="registro" class="py-5">
+      <div class="container">
+        <h2>Registro de Nuevo Usuario</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" class="form-control" id="contrasena" name="contrasena">
+          </div>
+          <div class="form-group">
+            <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+            <input type="password" class="form-control" id="confirmar-contrasena" name="confirmar-contrasena">
+          </div>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 O'CLOCK Second Hand   Michelle Domínguez</p> 
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
